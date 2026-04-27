@@ -32,3 +32,37 @@ class BelahKetupat
         // Friend function untuk menghitung keliling dari LayangLayang
         float kelilingFriend(LayangLayang L);
 };
+
+void LayangLayang::input()
+{
+    cout << "\n=== Input Layang-Layang ===" << endl;
+    cout << "Masukkan diagonal 1: ";
+    cin >> d1;
+    cout << "Masukkan diagonal 2: ";
+    cin >> d2;
+    cout << "Masukkan sisi 1: ";
+    cin >> sisi1;
+    cout << "Masukkan sisi 2: ";
+    cin >> sisi2;
+}
+
+float LayangLayang::Luas()
+{
+    return (d1 * d2) / 2;
+}
+
+float LayangLayang::Keliling()
+{
+    return 2 * (sisi1 + sisi2);
+}
+
+void LayangLayang::output()
+{
+    cout << "\n=== Output Layang-Layang ===" << endl;
+    cout << "Diagonal 1: " << d1 << endl;
+    cout << "Diagonal 2: " << d2 << endl;
+    cout << "Sisi 1: " << sisi1 << endl;
+    cout << "Sisi 2: " << sisi2 << endl;
+    cout << "Luas: " << Luas() << endl;
+    cout << "Keliling: " << Keliling() << endl;
+}
