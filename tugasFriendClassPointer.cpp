@@ -103,3 +103,23 @@ float BelahKetupat::kelilingFriend(LayangLayang L)
 {
     return 2 * (L.sisi1 + L.sisi2);
 }
+
+int main()
+{
+    LayangLayang layang;
+    BelahKetupat belah;
+    
+    // Input dan Output Layang-Layang
+    layang.input();
+    layang.output();
+    
+    // Input dan Output Belah Ketupat
+    belah.input();
+    belah.output();
+    
+    // Menggunakan friend function
+    cout << "\n=== Menggunakan Friend Function ===" << endl;
+    cout << "Keliling Layang-Layang (via friend function): " << belah.kelilingFriend(layang) << endl;
+    
+    return 0;
+}
